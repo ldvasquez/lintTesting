@@ -2,7 +2,7 @@ name: linter
 
 on: 
   push:
-    branches:
+    branches-ignore:
       - newBranch
 
 jobs: 
@@ -18,3 +18,6 @@ jobs:
           env:
             DEFAULT_BRANCH: newBranch
             GITHUB_TOEKN: ${{ secrets.GITHUB_TOEKN }}
+
+    name: increse-version
+    run: npm version patch
