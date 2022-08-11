@@ -19,5 +19,5 @@ jobs:
             DEFAULT_BRANCH: newBranch
             GITHUB_TOEKN: ${{ secrets.GITHUB_TOEKN }}
 
-    name: increse-version
-    run: npm version patch
+        - name: increse-version
+        run: npm version patch
