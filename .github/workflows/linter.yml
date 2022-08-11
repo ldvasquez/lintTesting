@@ -10,4 +10,4 @@ jobs:
     runs-on: valexec-npm-runner
     steps:
       - name: increse-version
-      - run: npm version patch
+        run: npm version patch
