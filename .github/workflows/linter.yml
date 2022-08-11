@@ -8,6 +8,6 @@ on:
 jobs: 
   linter:
     runs-on: valexec-npm-runner
-      steps:
+    steps:
       - name: increse-version
       - run: npm version patch
